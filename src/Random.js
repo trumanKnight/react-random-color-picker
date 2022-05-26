@@ -6,6 +6,10 @@ export class Random extends React.Component {
         super(props);
         this.state = { color: [0, 114, 16]};
     }
+
+    handleClick() {
+        this.setState({ color: this.chooseColor()});
+    }
     componentDidMount() {
     this.applyColor();
     }
