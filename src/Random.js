@@ -38,9 +38,9 @@ export class Random extends React.Component {
     render() {
     return (
         <div>
-        <h1 className={this.isLight() ? 'white' : 'black'}>
-
-        </h1>
+            <h1 className={this.isLight() ? 'white' : 'black'}>
+                Your color is {this.state.color}.
+            </h1>
         </div>
     );
     }
