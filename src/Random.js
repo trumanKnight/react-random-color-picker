@@ -5,11 +5,13 @@ export class Random extends React.Component {
     constructor(props) {
         super(props);
         this.state = { color: [0, 114, 16]};
+        this.handleClick = this.handleClick.bind(this);
     }
 
     handleClick() {
         this.setState({ color: this.chooseColor()});
     }
+
     componentDidMount() {
     this.applyColor();
     }
